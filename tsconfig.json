@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs", // mantém commonjs para evitar conflitos com CLI
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "strict": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": false,
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "moduleDetection": "force"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist", "db"]
+}
